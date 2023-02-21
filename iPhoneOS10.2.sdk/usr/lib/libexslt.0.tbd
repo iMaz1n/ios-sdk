@@ -1,0 +1,18 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: A01E7287-551E-3E9B-B3F9-460E07E40452', 'armv7s: D2617AF4-2CC6-3CCA-9538-CB39B9587C04', 
+                   'arm64: 484A9352-ADEA-39E5-A632-5D438855ABB9' ]
+platform:        ios
+install-name:    /usr/lib/libexslt.0.dylib
+current-version: 9.15
+compatibility-version: 9.0
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _exsltCommonRegister, _exsltDateRegister, _exsltDateXpathCtxtRegister, 
+                       _exsltDynRegister, _exsltFuncRegister, _exsltLibexsltVersion, 
+                       _exsltLibraryVersion, _exsltLibxmlVersion, _exsltLibxsltVersion, 
+                       _exsltMathRegister, _exsltMathXpathCtxtRegister, _exsltRegisterAll, 
+                       _exsltSaxonRegister, _exsltSetsRegister, _exsltSetsXpathCtxtRegister, 
+                       _exsltStrRegister, _exsltStrXpathCtxtRegister ]
+...

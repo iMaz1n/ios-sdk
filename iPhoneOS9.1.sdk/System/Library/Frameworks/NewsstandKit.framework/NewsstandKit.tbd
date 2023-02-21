@@ -1,0 +1,10 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/Frameworks/NewsstandKit.framework/NewsstandKit
+objc-constraint: retain_release
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _NKIssueDownloadCompletedNotification ]
+    objc-classes:    [ _NKAssetDownload, _NKIssue, _NKLibrary ]
+...

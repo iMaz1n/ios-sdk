@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 40DCDF78-F402-389F-BC2B-78D3CBE3B245', 'armv7s: A8B587B6-E508-346A-B7CD-182CFF1E9896', 
+                   'arm64: 294A2BFC-4E41-391E-A4D1-DF9149A36E6A' ]
+platform:        ios
+install-name:    /System/Library/TextInput/TextInput_emoji.bundle/TextInput_emoji
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    objc-classes:    [ _TIKeyboardInputManager_emoji ]
+...

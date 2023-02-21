@@ -1,0 +1,8 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: ACB17793-5FB4-31D1-BCD0-6C1C43B4A2DC', 'armv7s: 82B6C37E-A699-3EFE-9E8F-8210F8608C30', 
+                   'arm64: 5A6B065E-4792-3081-88F3-EFB874410766' ]
+platform:        ios
+install-name:    /usr/lib/libAWDProtobufFacetimeiMessage.dylib
+objc-constraint: none
+...

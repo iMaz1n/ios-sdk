@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 7EB0BEFC-3E49-3467-9B35-1F8C81F9C7CC', 'armv7s: 1DCAB2C7-273C-38F5-9E42-9E94AD2CCC25', 
+                   'arm64: AA389511-92E7-3228-82B9-3B8FC8CD48BB' ]
+platform:        ios
+install-name:    /usr/lib/libWAPI.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _WAPIEnabled, _WAPIStart, _WAPIStatus, _WAPIStop, __WCwapic_start, 
+                       __WCwapic_status, __WCwapic_stop, _isChinaRegion ]
+...

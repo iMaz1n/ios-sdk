@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 8CDB63FF-A5DA-3B39-BB7F-2EA784D5E42B', 'armv7s: E43B883F-8B38-3BCA-9C36-6D144CAAFF28', 
+                   'arm64: 7014BA3F-DF46-3287-8B58-F1ADCDCE0D91' ]
+platform:        ios
+install-name:    /System/Library/CoreServices/Encodings/libHebrewConverter.dylib
+current-version: 69.0
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ ___CFStringEncodingGetHebrewConverterDefinition ]
+...

@@ -1,0 +1,10 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AppStoreUI.framework/AppStoreUI
+objc-constraint: retain_release
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ASAppStoreUIBundle ]
+    objc-classes:    [ _ASClientController, _ASPurchaseBatch, _ASViewControllerFactory ]
+...

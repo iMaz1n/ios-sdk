@@ -1,0 +1,10 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/UserFS.framework/UserFS
+objc-constraint: retain_release
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    objc-classes:    [ _UserFSFile, _UserFSFolder, _UserFSItem, _UserFSStream, 
+                       _UserFSVolume ]
+...

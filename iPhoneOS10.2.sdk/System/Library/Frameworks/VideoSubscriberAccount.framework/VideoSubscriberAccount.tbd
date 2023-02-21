@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 43720453-B966-3264-A36B-CADD97316549', 'armv7s: 7F613240-9E45-31D9-A2E1-389E60C0C695', 
+                   'arm64: EE57720B-D4AF-3035-A4A4-26FFCBC6DA5F' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/VideoSubscriberAccount.framework/VideoSubscriberAccount
+current-version: 107.15
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _VSAccountProviderAuthenticationSchemeSAML, _VSAccountStoreDidChangeNotification, 
+                       _VSCheckAccessOptionPrompt, _VSErrorDomain, _VSErrorInfoKeyAccountProviderResponse, 
+                       _VSErrorInfoKeySAMLResponse, _VSErrorInfoKeySAMLResponseStatus, 
+                       _VSErrorInfoKeyUnsupportedProviderIdentifier, _VSIdentifierHashFromSubscriptionInfo, 
+                       _VSIdentityProviderAvailabilityDidChangeNotification ]
+    objc-classes:    [ _VSAccount, _VSAccountManager, _VSAccountManagerResult, _VSAccountMetadata, 
+                       _VSAccountMetadataRequest, _VSAccountProviderResponse, _VSAccountStore, 
+                       _VSDeveloperSettingsViewController_iOS, _VSIdentityProviderAvailabilityInfoCenter, 
+                       _VSSettingsViewController ]
+...

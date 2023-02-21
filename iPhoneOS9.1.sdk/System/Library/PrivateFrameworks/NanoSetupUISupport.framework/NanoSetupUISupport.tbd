@@ -1,0 +1,13 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/NanoSetupUISupport.framework/NanoSetupUISupport
+objc-constraint: retain_release
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _NSUIBottomGradientMaterialColor, _NSUIKeyMaterialColor, 
+                       _NSUIMaterialSpecificResourceNameForFileName, _NSUINanoSetupUISupportVersionNumber, 
+                       _NSUINanoSetupUISupportVersionString, _NSUITopGradientMaterialColor, 
+                       __DeviceMaterialForString ]
+    objc-classes:    [ _NSUIDeviceTintedLabel, _NSUIMaterialManager ]
+...

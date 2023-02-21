@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 63B7D2FB-EB2C-3542-9FDD-7A9A2FFB115A', 'armv7s: BC873D05-A3A3-397A-BA55-22C9828D0C7C', 
+                   'arm64: 43163604-3507-3CC6-BF89-AB046D413063' ]
+platform:        ios
+install-name:    /System/Library/CoreServices/Encodings/libSymbolConverter.dylib
+current-version: 69.0
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ ___CFStringEncodingGetSymbolConverterDefinition ]
+...

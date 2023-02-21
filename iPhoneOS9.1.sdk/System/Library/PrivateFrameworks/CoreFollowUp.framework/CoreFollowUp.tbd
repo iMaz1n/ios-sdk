@@ -1,0 +1,13 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreFollowUp.framework/CoreFollowUp
+objc-constraint: retain_release
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _CoreFollowUpVersionNumber, _CoreFollowUpVersionString, 
+                       _FLDaemonExportedInterface, _FLLoc, _FLLog ]
+    objc-classes:    [ _FLConstants, _FLDaemon, _FLFollowUpAction, _FLFollowUpController, 
+                       _FLFollowUpItem, _FLFollowUpNotification, _FLHSA2LoginNotification, 
+                       _FLHSA2PasswordResetNotification, _FLLogController ]
+...

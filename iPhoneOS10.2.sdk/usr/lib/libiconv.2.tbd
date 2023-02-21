@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 11666228-9481-3D27-9742-D2DF66CF84BF', 'armv7s: 0377FBA9-FB03-37DF-8AF3-53283425A80E', 
+                   'arm64: C85933D9-062F-32AC-8850-47AADB359E88' ]
+platform:        ios
+install-name:    /usr/lib/libiconv.2.dylib
+current-version: 7.0
+compatibility-version: 7.0
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ ___iconv_2VersionNumber, ___iconv_2VersionString, __libiconv_version, 
+                       _aliases2_lookup, _aliases_lookup, _iconv, _iconv_canonicalize, 
+                       _iconv_close, _iconv_open, _iconvctl, _iconvlist, _libiconv_relocate, 
+                       _libiconv_set_relocation_prefix, _locale_charset, _utf8_decodestr, 
+                       _utf8_encodestr, _utf_extrabytes ]
+...

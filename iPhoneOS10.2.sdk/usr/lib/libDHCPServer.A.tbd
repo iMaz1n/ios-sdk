@@ -1,0 +1,25 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 7C48155F-2D7A-3740-B1DC-18662E8D2E5C', 'armv7s: B45C4AC2-5A62-3422-84C4-CCA2E0DEF46F', 
+                   'arm64: A99785DA-D555-3A5F-9C8E-44F9EC16B0F1' ]
+platform:        ios
+install-name:    /usr/lib/libDHCPServer.A.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _DHCPSCopyDisabledInterfaces, _DHCPSDHCPLeaseListCreate, _DHCPSDHCPLeaseListNotificationKey, 
+                       _DHCPSDisabledInterfacesNotificationKey, _DHCPServer_AVersionNumber, 
+                       _DHCPServer_AVersionString, _PLCacheEntry_create, _PLCacheEntry_free, 
+                       _PLCache_add, _PLCache_append, _PLCache_count, _PLCache_free, 
+                       _PLCache_init, _PLCache_lookup_hw, _PLCache_lookup_identifier, 
+                       _PLCache_lookup_ip, _PLCache_lookup_prop, _PLCache_make_head, 
+                       _PLCache_print, _PLCache_read, _PLCache_remove, _PLCache_set_max, 
+                       _PLCache_write, _kDHCPSPropDHCPHWAddress, _kDHCPSPropDHCPIPAddress, 
+                       _kDHCPSPropDHCPLease, _kDHCPSPropIdentifier, _kDHCPSPropName, 
+                       _ni_delete_prop, _ni_name_dup, _ni_name_free, _ni_name_match, 
+                       _ni_namelist_delete, _ni_namelist_dup, _ni_namelist_free, 
+                       _ni_namelist_insert, _ni_namelist_match, _ni_prop_dup, _ni_prop_free, 
+                       _ni_proplist_delete, _ni_proplist_dump, _ni_proplist_dup, 
+                       _ni_proplist_free, _ni_proplist_insert, _ni_proplist_match, 
+                       _ni_set_prop ]
+...

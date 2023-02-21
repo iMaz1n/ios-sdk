@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 5FF28A1C-2541-3986-84FF-19EBF7230FA4', 'armv7s: 943C7BC4-6FE4-3041-9E45-9503D924FEAE', 
+                   'arm64: 92DFD51E-7D33-32C5-8C95-8C3E4D05500A' ]
+platform:        ios
+install-name:    /System/Library/TextInput/TextInput_chr.bundle/TextInput_chr
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    objc-classes:    [ _TIKeyboardInputManager_chr ]
+...

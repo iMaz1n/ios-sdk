@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: DAF58EFA-3AB8-33D2-B93A-23F87704E892', 'armv7s: EDA5A3D3-318E-3262-8255-42703504662D', 
+                   'arm64: 16291947-6F43-32EF-8B1C-D164E7442F3E' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/NewsstandKit.framework/NewsstandKit
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _NKIssueDownloadCompletedNotification ]
+    objc-classes:    [ _NKAssetDownload, _NKIssue, _NKLibrary ]
+...

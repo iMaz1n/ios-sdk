@@ -1,0 +1,30 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: D71FF007-556F-3E87-BB44-1FBD40EE5988', 'armv7s: 7BB04EA0-81CA-3537-8127-51A6880625FD', 
+                   'arm64: B0790B2A-8402-3F60-A91D-A6260AD9C948' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/QuickLook.framework/QuickLook
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _QLFrameworkBundle, _QLGetDefaultZoomForContentType, _QLGuessEncodingForTextFileAtURL, 
+                       _QLLocalizedErrorString, _QLLocalizedString, _QLPreviewControllerSupportsContentType, 
+                       _QLPreviewCopyEmbeddedPDF, _QLPreviewGetSupportedMIMETypes, 
+                       _QLPreviewItemContentTypeIsAudio, _QLPreviewNeedsHelpUnzippingURL, 
+                       _QLPreviewRequestAppendDataToAttachment, _QLPreviewRequestCreateAttachmentURL, 
+                       _QLPreviewRequestGetDocumentObject, _QLPreviewRequestIsCancelled, 
+                       _QLPreviewRequestSetDataRepresentation, _QLPreviewRequestSetDocumentObject, 
+                       _QLPreviewRequestSetError, _QLPreviewRequestStartDataRepresentation, 
+                       _QLPreviewScheme, _QLPreviewSupportsContentType, _QLTypeCopyBestMimeTypeForFileNameAndMimeType, 
+                       _QLTypeCopyBestMimeTypeForURLAndMimeType, _QLTypeCopyUTIForURLAndMimeType, 
+                       _kQLPreviewOptionPasswordKey, _kQLPreviewPropertyAllowJavascriptKey, 
+                       _kQLPreviewPropertyAttachmentDataKey, _kQLPreviewPropertyAttachmentsKey, 
+                       _kQLPreviewPropertyHeightKey, _kQLPreviewPropertyMIMETypeKey, 
+                       _kQLPreviewPropertyTextEncodingNameKey, _kQLPreviewPropertyWidthKey, 
+                       _kQLTestingNotificationTimestampKey ]
+    objc-classes:    [ _QLItem, _QLItemViewController, _QLNotificationCenter, _QLPreviewCollectionHostContext, 
+                       _QLPreviewCollectionServiceContext, _QLPreviewController, 
+                       _QLPreviewConverter, _QLRemotePreviewHostContext, _QLRemotePreviewServiceContext, 
+                       _QLServiceViewController, _QLThumbnail, _QLThumbnailCreationOperation, 
+                       _QLThumbnailDescriptor ]
+...

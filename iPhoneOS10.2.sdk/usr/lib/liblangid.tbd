@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 35E01C56-1E5E-3A5E-9B40-033E07CE5F36', 'armv7s: F91A711E-D329-35EB-AECE-BC0B24C57422', 
+                   'arm64: A74F4F8A-2D53-3E1F-9260-44F052CC5B7D' ]
+platform:        ios
+install-name:    /usr/lib/liblangid.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ __env, __env_mutex, __langid_create_with_datapath_internal, 
+                       __langid_dispose_internal, __langid_env_create, __langid_env_dispose, 
+                       _langid_consume_string, _langid_create, _langid_create_with_datapath, 
+                       _langid_dispose, _langid_global_dispose, _langid_highest_score, 
+                       _langid_identify, _langid_identify_bufsize, _langid_identify_withbuf, 
+                       _langid_languagecode, _langid_numlanguages, _langid_reset, 
+                       _textcat_Classify, _textcat_Init ]
+...

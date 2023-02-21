@@ -1,0 +1,9 @@
+---
+archs:           [ arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/BiometricKitUI.framework/BiometricKitUI
+objc-constraint: retain_release
+exports:         
+  - archs:           [ arm64 ]
+    objc-classes:    [ _BiometricKitUI, _BiometricKitUIEnrollViewController ]
+...

@@ -1,0 +1,24 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/VoiceTriggerUI.framework/VoiceTriggerUI
+objc-constraint: retain_release
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _VTUI_AVAudioSessionPortBorealisInput, _VoiceTriggerUIVersionNumber, 
+                       _VoiceTriggerUIVersionString, _kVTUIAspectRatioDeviceDoneN61Cable, 
+                       _kVTUIAspectRatioDeviceDoneN61NoCable, _kVTUIAspectRatioDeviceIntroN61, 
+                       _kVTUIFontSize_Button, _kVTUIFontSize_ButtonSmall, 
+                       _kVTUIFontSize_Footer, _kVTUIFontSize_Main, _kVTUIFontSize_Progress, 
+                       _kVTUIFontSize_Title, _kVTUIPath_ImageDeviceDoneN61Cable, 
+                       _kVTUIPath_ImageDeviceDoneN61NoCable, _kVTUIPath_ImageDeviceIntroN61, 
+                       _kVTUIPath_ImageStaticWave, _kVTUIPath_ImageTick, 
+                       _kVTUIPath_ImageTickMask, _kVTUIPath_ImageXMask, 
+                       _kVTUIStandardScreenHeight, _kVTUIStandardScreenWidth ]
+    objc-classes:    [ _AudioCircularBuffer, _AudioFileWriter, _AudioFileWriterInt, 
+                       _VTUIASRGrammars, _VTUIArtworksManager, _VTUIEnrollTrainingViewController, 
+                       _VTUIEnrollmentEditDistanceFinder, _VTUIEnrollmentSetupIntroView, 
+                       _VTUIEnrollmentStateView, _VTUIEnrollmentSuccessView, 
+                       _VTUIPagedLabel, _VTUISigmoid, _VTUIStringsHelper, 
+                       _VTUIStyle, _VTUITickMarkView, _VTUITrainingManager ]
+...

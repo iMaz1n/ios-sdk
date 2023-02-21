@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: A9CC2911-C41D-36DC-9203-8DFBAEFDED39', 'armv7s: ED84EE43-B89F-36F6-84F5-EB73FF3043FE', 
+                   'arm64: 204699B0-84FC-3331-9566-861210FC37FD' ]
+platform:        ios
+install-name:    /usr/lib/libdscsym.dylib
+current-version: 144.0
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _dscsymVersionNumber, _dscsymVersionString, _dscsym_buffer_iterate_binaries, 
+                       _dscsym_copy_dscsym_files, _dscsym_iterate_binaries, _dscsym_mmap_dscsym_for_uuid, 
+                       _dscsym_save_dscsyms_for_current_caches, _kSPSharedCacheInfo_BinariesKey, 
+                       _kSPSharedCacheInfo_BinaryLoadAddressKey, _kSPSharedCacheInfo_BinaryPathKey, 
+                       _kSPSharedCacheInfo_BinaryTextSizeKey, _kSPSharedCacheInfo_BinaryUUIDKey, 
+                       _kSPSharedCacheInfo_CacheUUIDKey ]
+...
