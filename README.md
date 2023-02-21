@@ -15,3 +15,9 @@ iOS SDK for:
 - iOS 10.1
 - iOS 10.2
 - iOS 10.3
+- iOS 11.4
+- iOS 12.4
+- iOS 13.7
+- iOS 14.5
+- iOS 15.0
+- iOS 15.5
